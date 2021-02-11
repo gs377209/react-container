@@ -39,8 +39,5 @@ jobs:
           deno install --allow-read -n deno_cat https://deno.land/std/examples/cat.ts
           deno_cat ./README.md
 
-      - name: Cache Dependencies
-        run: deno cache deps.ts
-
       - name: Run Tests
         run: deno test -A --unstable
