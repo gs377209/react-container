@@ -1,6 +1,11 @@
 # react-container
 Playing around with CRA and containers
 
+Netlify: [![Netlify Status](https://api.netlify.com/api/v1/badges/9d27417e-ae4b-4e1c-9240-5724cfbc755f/deploy-status)](https://app.netlify.com/sites/loving-almeida-35f540/deploys)
+Vercel: https://react-container-git-main.gs377209.vercel.app/
+Onrender: https://react-container.onrender.com/
+
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
