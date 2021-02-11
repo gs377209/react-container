@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  reactcontainer:
+    image: reactcontainer
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+      - 4000:4000
+      - 5000:5000
+      - 6060:6060
+      - 44371:44371
+      - 9229:9229
+    command: ['node', '--inspect=0.0.0.0:9229', 'index.js']
