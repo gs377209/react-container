@@ -2,8 +2,8 @@
 repo:
   - ./*
   
-# Add '@domain/core' label to any change within the 'core' package
-@domain/core:
+# Add 'core' label to any change within the 'core' package
+core:
   - package/core/*
   - package/core/**/*
 
