@@ -1,9 +1,8 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines"],
-  "plugins": ["stylelint-order"],
-  "rules": {
-    "string-quotes": "double",
-    "declaration-colon-newline-after": null,
-    "value-list-comma-newline-after": null
-  }
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-prettier"
+  ],
+  "plugins": ["stylelint-order"]
 }
