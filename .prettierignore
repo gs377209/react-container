@@ -1,0 +1,6 @@
+# Ignore artifacts:
+analytics
+build
+coverage
+node_modules
+styleguide
