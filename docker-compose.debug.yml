@@ -1,4 +1,4 @@
-version: '3.4'
+version: "3.4"
 
 services:
   reactcontainer:
@@ -15,4 +15,4 @@ services:
       - 6060:6060
       - 44371:44371
       - 9229:9229
-    command: ['node', '--inspect=0.0.0.0:9229', 'index.js']
+    command: ["node", "--inspect=0.0.0.0:9229", "index.js"]
