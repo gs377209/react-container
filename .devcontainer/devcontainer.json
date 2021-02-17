@@ -21,7 +21,8 @@
     "ms-azuretools.vscode-docker",
     "esbenp.prettier-vscode",
     "tombonnike.vscode-status-bar-format-toggle",
-    "orta.vscode-jest"
+    "orta.vscode-jest",
+    "stylelint.vscode-stylelint"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
