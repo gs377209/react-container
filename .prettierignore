@@ -4,3 +4,6 @@ build
 coverage
 node_modules
 styleguide
+
+# temporary:
+.github
