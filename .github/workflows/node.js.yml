@@ -28,3 +28,7 @@ jobs:
     - run: yarn install
     - run: yarn build --if-present
     - run: yarn test
+    - run: yarn analyze
+    - run: yarn prettier
+    - run: yarn lint
+    - run: yarn stylelint
