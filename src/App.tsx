@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
 import { Button, Counter } from "components";
 
@@ -12,44 +17,43 @@ function App() {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/button">Button</Link>
+            <NavLink to="/button">Button</NavLink>
           </li>
           <li>
-            <Link to="/counter">Counter</Link>
+            <NavLink to="/counter">Counter</NavLink>
           </li>
         </ul>
 
         <hr />
 
-        <Switch>
-          <Route exact path="/">
-            <div className="app">
-              <header className="app-header">
-                <img src={logo} className="app-logo" alt="logo" />
-                <p>
-                  Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                  className="app-link"
-                  href="https://reactjs.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Learn React
-                </a>
-              </header>
-            </div>
-          </Route>
-          <Route path="/button">
-            <Button>test</Button>
-          </Route>
-          <Route path="/counter">
-            <Counter />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="app">
+                <header className="app-header">
+                  <img src={logo} className="app-logo" alt="logo" />
+                  <p>
+                    Edit <code>src/App.tsx</code> and save to reload.
+                  </p>
+                  <a
+                    className="app-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Learn React
+                  </a>
+                </header>
+              </div>
+            }
+          />
+          <Route path="button" element={<Button>test</Button>} />
+          <Route path="counter" element={<Counter />} />
+        </Routes>
       </div>
     </Router>
   );
