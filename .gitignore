@@ -11,6 +11,7 @@
 # production
 /build
 /styleguide
+/storybook-static
 
 # analytics
 /analytics
