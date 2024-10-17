@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.2",
-    "bootstrap": "^4.6.1",
+    "bootstrap": "^5.0.0",
     "http-proxy-middleware": "^2.0.3",
     "react": "^17.0.2",
     "react-app-polyfill": "^3.0.0",
