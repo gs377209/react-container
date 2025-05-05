@@ -1,4 +1,4 @@
-FROM node:16-buster
+FROM node:20-buster
 ENV NODE_ENV=production
 WORKDIR /usr/src/app
 COPY ["package.json", "yarn.lock*", "./"]
